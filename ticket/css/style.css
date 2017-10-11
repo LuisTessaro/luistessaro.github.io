@@ -7,10 +7,16 @@
   box-sizing: border-box;
 }
 
+
 html, body {
   background: #f1f1f1;
   font-family: 'Merriweather', sans-serif;
   padding: 1em;
+
+}
+body{
+	 font-size: 250;
+
 }
 
 h1 {
@@ -20,11 +26,12 @@ h1 {
 }
 
 form {
-  max-width: 1200px;
+  max-width: 1800px;
   text-align: center;
   margin: 20px auto;
 }
 form input, form textarea {
+  font-size: 200%;
   border: 0;
   outline: 0;
   padding: 1em;
