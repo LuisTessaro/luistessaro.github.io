@@ -19,17 +19,14 @@ h1 {
   text-align: center;
   color: #a8a8a8;
   text-shadow: 1px 1px 0 white;
-
-	 font-size: 550%;
 }
 
 form {
-  max-width: 1800px;
+  max-width: 600px;
   text-align: center;
   margin: 20px auto;
 }
 form input, form textarea {
-  font-size: 200%;
   border: 0;
   outline: 0;
   padding: 1em;
@@ -61,7 +58,6 @@ form input, form select {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   resize: none;
-  font-size: 200%;
 }
 
 form input:focus, form textarea:focus {
