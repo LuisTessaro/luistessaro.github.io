@@ -14,15 +14,13 @@ html, body {
   padding: 1em;
 
 }
-body{
-	 font-size: 250;
-
-}
 
 h1 {
   text-align: center;
   color: #a8a8a8;
   text-shadow: 1px 1px 0 white;
+
+	 font-size: 550%;
 }
 
 form {
@@ -63,6 +61,7 @@ form input, form select {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   resize: none;
+  font-size: 200%;
 }
 
 form input:focus, form textarea:focus {
