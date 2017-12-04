@@ -17,7 +17,7 @@ h2 {
 	margin: 0;
 	color: #121d1f;
 	font-weight: 700;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 	font-size: 34px;
 }
 h3, h4 {
@@ -259,7 +259,7 @@ hr {
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 ); /* IE6-9 */
 }
 .categories {
-	padding-bottom: 50px;
+	padding-bottom: 30px;
 	text-align: center;
 }
 ul.cat li {
