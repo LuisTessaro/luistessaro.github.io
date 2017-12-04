@@ -259,7 +259,7 @@ hr {
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 ); /* IE6-9 */
 }
 .categories {
-	padding-bottom: 50px;
+	padding-bottom: 90px;
 	text-align: center;
 }
 ul.cat li {
