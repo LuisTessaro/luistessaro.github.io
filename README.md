@@ -1,2 +1,2 @@
-# luistessaro.github.io
-Using https://onepagelove.com/verum as a template
+# http://luistessaro.github.io/
+Using onepagelove verum as a template
