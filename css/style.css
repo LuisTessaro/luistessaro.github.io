@@ -13,7 +13,7 @@ h1 strong {
 	font-weight: 900;
 }
 h2 {
-	line-height: 20px;
+	line-height: 40px;
 	margin: 0;
 	color: #121d1f;
 	font-weight: 700;
@@ -257,9 +257,10 @@ hr {
 	background: -ms-linear-gradient(top, #ffffff 0%, #f4f5f6 49%, #ffffff 100%); /* IE10+ */
 	background: linear-gradient(to bottom, #ffffff 0%, #f4f5f6 49%, #ffffff 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 ); /* IE6-9 */
+
 }
 .categories {
-	padding-bottom: 30px;
+	padding-bottom: 50px;
 	text-align: center;
 }
 ul.cat li {
@@ -268,6 +269,7 @@ ul.cat li {
 ol.type li {
 	display: inline-block;
 	margin-left: 20px;
+	margin-bottom: 30px;
 }
 ol.type li a {
 	background: #7bc3d1;
