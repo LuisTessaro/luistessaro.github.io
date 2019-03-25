@@ -1,0 +1,269 @@
+body {
+    background-color: #20639b;
+}
+
+@media screen and (max-width: 1200px) {
+    .main-area {
+        width: 66%;
+        float: left;
+    }
+    .sidebar {
+        width: 34%;
+        float: right;
+    }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+
+@media screen and (max-width: 600px) {
+    .main-area, .sidebar {
+        width: auto;
+        float: none;
+    }
+    .main-area {
+        padding: 0;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 80%;
+}
+
+.container {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border: 10px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 2px;
+    }
+}
+
+header {
+    padding-bottom: 20px;
+    color: #0e263a;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 180%;
+}
+
+header p {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content-area {
+    border-top: 3px solid rgb(87, 83, 83);
+    border-bottom: 3px solid rgb(87, 83, 83);
+}
+
+.main-area {
+    padding-right: 20px;
+    box-sizing: border-box;
+    text-indent: 15px;
+}
+
+.sidebar {
+    border: 5px solid #f6d55c;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 90%;
+    background-image: linear-gradient(to bottom right, #f6d55c, #ffffff);
+}
+
+footer {
+    text-align: center;
+    font-size: 70%;
+    color: rgb(155, 151, 151);
+    padding: 20px 0px 0px 0px;
+}
+
+.group:before, .group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1;
+}
+
+.side-nav {
+    margin-top: 10px;
+}
+
+.side-nav ul {
+    padding: 0%;
+    margin: 0%;
+}
+
+.side-nav li {
+    list-style: none;
+    float: left;
+    padding: 0px 2px 0px 2px;
+}
+
+.side-nav a {
+    text-decoration: none;
+    border: 2px solid rgb(27, 27, 27);
+    border-radius: 3px;
+    padding: 0px 5px 0px 5px;
+    color: white;
+    background-color: rgb(27, 27, 27);
+}
+
+.side-nav a:hover {
+    background-color: rgb(100, 100, 100);
+    border-color: rgb(100, 100, 100);
+}
+
+.banner-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.637);
+    padding: 5px 15px;
+}
+
+.image-banner {
+    padding-right: 0px;
+    text-indent: 0px;
+    position: relative;
+}
+
+.image-banner img {
+    display: block;
+}
+
+.main-area table {
+    text-indent: 0px;
+}
+
+.main-area form {
+    text-indent: 0px;
+}
+
+/* table style */
+
+table {
+    margin-bottom: 10px;
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th {
+    text-align: left;
+    background-color: #f6d55c;
+    color: white;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4)
+}
+
+table th, table td {
+    border: 1px solid #f6d55c;
+    padding: 10px;
+}
+
+table tbody tr:nth-child(odd) td {
+    background-color: rgb(255, 233, 153);
+}
+
+.col-item {
+    width: 60%;
+}
+
+.col-quantity {
+    widows: 20%;
+}
+
+.col-price {
+    widows: 20%;
+}
+
+table.grocery-list tr :nth-child(2), table.grocery-list tr :nth-child(3) {
+    text-align: center;
+}
+
+form {
+    margin-top: 10px;
+    background-color: #ECECEC;
+    padding: 30px 40px;
+}
+
+form #email, form #password {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    padding: 0 10px;
+    height: 40px;
+    margin-bottom: 15px;
+    border: 1px solid #ECECEC;
+}
+
+form select {
+    width: 100%;
+}
+
+input {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 100%;
+}
+
+input[type="submit"] {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    background-color: rgb(255, 233, 153);
+    color: white;
+    padding: 10px 0px 10px 0px;
+    border: 1px solid rgb(255, 233, 153);
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]:hover, input[type="submit"]:focus {
+    background-color: #f6d55c;
+    border: 1px solid #f6d55c;
+    border-radius: 3px;
+}
+
+.hidden-label {
+    display: none;
+}
+
+@media screen and (max-width: 400px) {
+    .side-nav li {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 10px;
+        float: none;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .side-nav a {
+        display: block;
+        box-sizing: border-box;
+    }
+}
