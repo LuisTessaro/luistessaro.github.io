@@ -1,81 +1,9 @@
 <template>
   <div id="app">
     <Header></Header>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <About></About>
+    <Portfolio></Portfolio>
+    <Resume></Resume>
     <Contact></Contact>
     <Footer></Footer>
   </div>
@@ -83,16 +11,22 @@
 
 <script>
 // import axios from "axios";
+import Header from "./components/Header";
+import About from "./components/About";
+import Portfolio from "./components/Portfolio";
+import Resume from "./components/Resume";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import Header from "./components/Header";
 
 export default {
   name: "app",
   components: {
     Header,
-    Footer,
-    Contact
+    About,
+    Portfolio,
+    Resume,
+    Contact,
+    Footer
   }
 };
 </script>
@@ -100,6 +34,8 @@ export default {
 <style>
 body,
 html {
+  min-width: 290px;
+  box-sizing: border-box;
   scroll-behavior: smooth;
   padding: 0px;
   margin: 0px;
@@ -107,6 +43,7 @@ html {
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
   color: #656c6d;
+  background-color: #f6f6f6;
   width: 100% !important;
   height: 100% !important;
 }

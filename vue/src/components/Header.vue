@@ -28,6 +28,7 @@ export default {
 
 <style scoped>
 .topnav {
+  z-index: 999;
   font-family: "Oswald", sans-serif;
   overflow: hidden;
   background: #121d1f;
