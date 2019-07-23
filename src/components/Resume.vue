@@ -77,7 +77,7 @@ h2 {
   font-weight: 700;
   margin-bottom: 30px;
   font-size: 34px;
-  margin-top: 90px;
+  margin-top: 40px;
   text-align: center;
 }
 

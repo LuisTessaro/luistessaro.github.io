@@ -1,2 +1,2 @@
 # http://luistessaro.github.io/
-Using onepagelove verum as a template
+My CV as a site

@@ -1,6 +1,6 @@
 <template>
-  <div class="portfolio">
-    <div id="portfolio">
+  <div class="portfolio" id="portfolio">
+    <div>
       <div class="container">
         <div class="section-title text-center center">
           <h2>Portfolio</h2>
@@ -123,6 +123,7 @@ export default {
   color: #121d1f;
   background: #7bc3d1;
   text-align: center;
+  margin-top: 90px;
 }
 
 .portfolio h2 {
