@@ -32,6 +32,13 @@ export default {
 </script>
 
 <style>
+*[id]:before {
+  display: block;
+  content: " ";
+  margin-top: -75px;
+  height: 75px;
+  visibility: hidden;
+}
 body,
 html {
   min-width: 290px;
