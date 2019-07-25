@@ -18,53 +18,20 @@
     </ul>
   </div>
 </template>
-
+                                                                              
 <script>
+import axios from "axios";
 export default {
   name: "Resume",
   data() {
     return {
-      items: [
-        {
-          id: 0,
-          timeline: "2019 - 2019",
-          title: "MokaMind",
-          name: "Internship",
-          description: "Woked with everything related to web development and AI, front to back. Helped build the multi-state iot infrastructure for both of the biggest banks in Brazil (Itau, Bradesco) and develop industry automation analysis apps."
-        },
-        {
-          id: 1,
-          timeline: "2014 - 2019",
-          title: "Mackenzie FCI",
-          name: "Computer Science Undergraduate",
-          description: "Majored on CS."
-        },
-        {
-          id: 2,
-          timeline: "2014 - 2014",
-          title: "Casa Taiguara de Cultura Digital",
-          name: "Game Design course",
-          description:
-            "Experienced the managing process of a game development project, the concepts of what makes a game and got to work in a group to develop a board game."
-        },
-        {
-          id: 3,
-          timeline: "2011 - 2013",
-          title: "ETEC Albert Einsten",
-          name: "IT Tec",
-          description:
-            "Studied the basic concepts of computer science and project management."
-        },
-        {
-          id: 4,
-          timeline: "2008 - 2014",
-          title: "Fisk",
-          name: "English course",
-          description:
-            "Complete course with a international certification of proficiency."
-        }
-      ]
+      items: []
     };
+  },
+  created() {
+    axios.get("https://luiscv-backend.herokuapp.com/api/resume/").then(res => {
+      this.items = res.data;
+    });
   }
 };
 </script>
