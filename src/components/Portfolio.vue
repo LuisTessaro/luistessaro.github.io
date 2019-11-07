@@ -6,7 +6,7 @@
           <h2>Portfolio</h2>
           <hr />
         </div>
-        <div v-bind:key="item.id" v-for="item in items">
+        <div class="cardwrapper" v-bind:key="item.id" v-for="item in items">
           <div class="containerCard">
             <article class="card">
               <a :href="item.href" class="card__link">
@@ -47,22 +47,22 @@ export default {
     this.items = [
       {
         href: "https://https://github.com/LuisTessaro/Express-Example",
-        imgpath: require("../assets/portfolio/express.png"),
+        imgpath: "img/express.png",
         title: "Express-Example",
         subtitle: "Web Development"
       },
       {
         href: "https://github.com/LuisTessaro/TextbasedMMO_Telegram-bot",
-        imgpath: require("../assets/portfolio/dicesmall.png"),
+        imgpath: "img/dicesmall.png",
         title: "Telegram RPG",
         subtitle: "Game Development"
       },
       {
         href: "https://github.com/LuisTessaro/InvokerGame",
-        imgpath: require("../assets/portfolio/invokergamesmall.jpg"),
+        imgpath: "img/invokergamesmall.png",
         title: "Invoker Game",
         subtitle: "Game Development"
-      },
+      }
     ];
   }
 };
@@ -74,7 +74,7 @@ export default {
   background: #7bc3d1;
   text-align: center;
   padding-top: 30px;
-  padding-bottom: 70px
+  padding-bottom: 70px;
 }
 
 .portfolio h2 {
@@ -118,12 +118,14 @@ export default {
   align-items: center;
   margin-bottom: 15px;
 }
+
 .card {
   position: relative;
   width: 20em;
   background-color: #292929;
   transition: all 0.3s ease-in-out;
 }
+
 .card:hover {
   box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.2);
 }
@@ -184,5 +186,11 @@ export default {
 .card:hover .card__header-icon {
   opacity: 1;
   transform: translateX(0);
+}
+
+@media screen and (min-width: 1200px) {
+  /* .cardwrapper {
+    display: grid;
+  } */
 }
 </style>
