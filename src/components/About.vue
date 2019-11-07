@@ -87,9 +87,11 @@ hr {
 }
 
 .btn-container {
+  margin-top: 40px;
   font-family: "Open Sans", sans-serif;
-  padding: 25px 0px 50px 0px;
+  padding: 25px 0px 20px 0px;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .btn {

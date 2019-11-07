@@ -20,7 +20,6 @@
 </template>
                                                                               
 <script>
-import axios from "axios";
 export default {
   name: "Resume",
   data() {
@@ -29,9 +28,42 @@ export default {
     };
   },
   created() {
-    axios.get("https://luiscv-backend.herokuapp.com/api/resume/").then(res => {
-      this.items = res.data;
-    });
+    this.items = [
+      {
+        timeline: "2019 - 2019",
+        title: "Mokamind",
+        name: "6 Month Internship",
+        description:
+          "Worked with everything related to web development and AI, front to back. Helped build the multi-state iot infrastructure for the two biggest banks in Brazil (Itau, Bradesco)"
+      },
+      {
+        timeline: "2014 - 2019",
+        title: "Mackenzie - FCI",
+        name: "Computer Science Graduate",
+        description: "Majored on CS."
+      },
+      {
+        timeline: "2014 - 2014",
+        title: "Casa Taiguara de Cultura Digital",
+        name: "Game Design course",
+        description:
+          "Got to experiance the managing process of a game development project, the concepts of what makes a game and got to work in a group to develop a board game."
+      },
+      {
+        timeline: "2011 - 2013",
+        title: "ETEC Albert Einsten",
+        name: "IT Technician",
+        description:
+          "Studied the basic concepts of computer science and project management."
+      },
+      {
+        timeline: "2008 - 2014",
+        title: "Fisk",
+        name: "English course",
+        description:
+          "Complete course with a international certification of proficiency."
+      }
+    ];
   }
 };
 </script>
@@ -61,5 +93,15 @@ hr {
 
 .title {
   display: block;
+}
+
+.timeline-body {
+  padding-right: 40px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.resume {
+  margin-bottom: 50px;
 }
 </style>
