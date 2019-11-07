@@ -6,28 +6,30 @@
           <h2>Portfolio</h2>
           <hr />
         </div>
-        <div class="cardwrapper" v-bind:key="item.id" v-for="item in items">
-          <div class="containerCard">
-            <article class="card">
-              <a :href="item.href" class="card__link">
-                <div class="card__media">
-                  <img class="portfolio-img" :src="item.imgpath" />
-                </div>
-
-                <div class="card__header">
-                  <h3 class="card__header-title">{{item.title}}</h3>
-                  <p class="card__header-meta">{{item.subtitle}}</p>
-                  <div class="card__header-icon">
-                    <svg viewBox="0 0 28 25">
-                      <path
-                        fill="#fff"
-                        d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z"
-                      />
-                    </svg>
+        <div class="cards">
+          <div class="cardwrapper" v-bind:key="item.id" v-for="item in items">
+            <div class="containerCard">
+              <article class="card">
+                <a :href="item.href" class="card__link">
+                  <div class="card__media">
+                    <img class="portfolio-img" :src="item.imgpath" />
                   </div>
-                </div>
-              </a>
-            </article>
+
+                  <div class="card__header">
+                    <h3 class="card__header-title">{{item.title}}</h3>
+                    <p class="card__header-meta">{{item.subtitle}}</p>
+                    <div class="card__header-icon">
+                      <svg viewBox="0 0 28 25">
+                        <path
+                          fill="#fff"
+                          d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </a>
+              </article>
+            </div>
           </div>
         </div>
       </div>
@@ -122,7 +124,7 @@ export default {
 .card {
   position: relative;
   width: 20em;
-  background-color: #292929;
+  background-color: #121d1f;
   transition: all 0.3s ease-in-out;
 }
 
@@ -188,9 +190,10 @@ export default {
   transform: translateX(0);
 }
 
-@media screen and (min-width: 1200px) {
-  /* .cardwrapper {
+@media screen and (min-width: 1000px) {
+  .cards {
     display: grid;
-  } */
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 </style>
