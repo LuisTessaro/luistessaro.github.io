@@ -1,0 +1,120 @@
+/* CSS Summary
+------------------------------------------
+1. General
+2. Sections
+------------------------------------------
+*/
+
+/*------------------------------------
+1. General
+------------------------------------*/
+
+@import "./styleguide.scss";
+
+*,
+*:focus,
+:focus {
+  outline: none !important;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+select:focus,
+textarea {
+  font-size: 16px;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: none;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+body {
+  height: auto;
+  touch-action: manipulation;
+  margin: 0;
+  padding: 0;
+}
+
+body #root {
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+form {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1160px;
+  }
+}
+
+/*------------------------------------
+2. Sections
+------------------------------------*/
+
+.section:nth-child(odd) {
+  background-color: $black;
+}
+.section:nth-child(even) {
+  background-color: lighten($black, 2%);
+}

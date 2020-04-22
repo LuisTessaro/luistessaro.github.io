@@ -1,0 +1,51 @@
+@import "../../styleguide.scss";
+
+#portifolio {
+  transform: translateY(-69px);
+}
+
+.portifolio {
+  .container {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+
+    min-height: calc(50vh - 69px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    .title {
+      margin-top: $margin * 2;
+      margin-bottom: $margin * 2;
+
+      h3 {
+        font-size: $introduction-text-size * 1.8;
+        font-weight: 500;
+        color: $main;
+      }
+      hr {
+        border: 1px solid $main;
+      }
+    }
+
+    .cards {
+      width: 100%;
+
+      margin-bottom: $margin * 2;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 40px;
+
+      @media (max-width: 1200px) {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      @media (max-width: 900px) {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}

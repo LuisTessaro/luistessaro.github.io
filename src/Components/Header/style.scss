@@ -1,0 +1,96 @@
+@import "../../styleguide.scss";
+
+.navbar-sticky{
+  position: sticky;
+  top: 0;
+}
+
+.hamb-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: white;
+  // display: none;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  width: 100%;
+  background-color: darken($black, 3%);
+  color: $white;
+  justify-content: center;
+
+  z-index: 10;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $padding 0;
+
+    h1 {
+      font-family: "Montserrat", sans-serif;
+    }
+
+    ul {
+      display: flex;
+
+      li {
+        margin: 0 1rem;
+        display: inline-block;
+        padding-bottom: 2px;
+        a {
+          color: $white;
+          font-family: "Montserrat", sans-serif;
+        }
+        a:hover {
+          transition: color 0.2s linear;
+          color: darken($white, 20%);
+        }
+      }
+
+      li.active {
+        border-bottom: 1px solid $main;
+        a {
+          color: $main;
+        }
+      }
+
+      li:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .container {
+      ul {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .container {
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
+      padding: $padding 0;
+      margin-left: $margin;
+      i {
+        margin-right: $margin;
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    .container {
+      h1 {
+        font-size: 20px;
+      }
+    }
+  }
+}
