@@ -29,7 +29,7 @@ const Hero = () => {
                 </div>
                 <div className="introduction-image" >
                     <div></div>
-                    <img src="/img/AboutImg.jpg" alt="my hero"></img>
+                    <img src="https://raw.githubusercontent.com/LuisTessaro/luistessaro.github.io/React-Source/public/img/AboutImg.jpg" alt="my hero"></img>
                 </div>
 
             </div>
