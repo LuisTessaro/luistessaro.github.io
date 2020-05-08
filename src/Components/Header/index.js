@@ -24,11 +24,36 @@ const Header = () => {
             <div className={"clicable-bg" + menuOpen} onClick={() => setMenuOpen('')} />
             <div className={"hamb-menu fixed top-0 right-0 bg-white shadow-xs h-screen" + menuOpen} style={{ zIndex: 2000 }}>
                 <ul className="flex flex-col justify-center items-center">
-                    <li className="hover:bg-main font-bold p-2 w-full text-center cursor-pointer hover:text-white border-bottom" onClick={() => setMenuOpen('')} ><i className="fas fa-times" /></li>
-                    <li className="hover:bg-main font-bold p-2 w-full text-center cursor-pointer hover:text-white border-bottom" onClick={() => setMenuOpen('')} ><a className="" href="#">Home</a></li>
-                    <li className="hover:bg-main font-bold p-2 w-full text-center cursor-pointer hover:text-white border-bottom" onClick={() => setMenuOpen('')} ><a className="" href="#about">About</a></li>
-                    <li className="hover:bg-main font-bold p-2 w-full text-center cursor-pointer hover:text-white border-bottom" onClick={() => setMenuOpen('')} ><a className="" href="#portifolio">Portifolio</a></li>
-                    <li className="hover:bg-main font-bold p-2 w-full text-center cursor-pointer hover:text-white border-bottom" onClick={() => setMenuOpen('')} ><a className="" href="#contact">Contact</a></li>
+                    <a className="hover:bg-main font-bold p-2 w-full text-center cursor-pointer hover:text-white border-bottom" onClick={() => setMenuOpen('')} ><i className="fas fa-times" /></a>
+
+                    <a className="hover:bg-main font-bold p-2 w-full text-center cursor-pointer hover:text-white border-bottom"
+                        onClick={() => {
+                            setMenuOpen('')
+                            setActive(0)
+                        }}
+                        href="#">Home</a>
+
+                    <a className="hover:bg-main font-bold p-2 w-full text-center cursor-pointer hover:text-white border-bottom"
+                        onClick={() => {
+                            setMenuOpen('')
+                            setActive(1)
+                        }}
+                        href="#about">About</a>
+
+                    <a className="hover:bg-main font-bold p-2 w-full text-center cursor-pointer hover:text-white border-bottom"
+                        onClick={() => {
+                            setMenuOpen('')
+                            setActive(2)
+                        }}
+                        href="#portifolio">
+                        Portifolio</a>
+
+                    <a className="hover:bg-main font-bold p-2 w-full text-center cursor-pointer hover:text-white border-bottom"
+                        onClick={() => {
+                            setMenuOpen('')
+                            setActive(3)
+                        }}
+                        href="#contact">Contact</a>
                 </ul>
             </div>
         </div>

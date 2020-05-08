@@ -25,9 +25,10 @@
   transition: width 0.2s ease-in-out;
   ul {
     min-width: 240px;
-    li.border-bottom {
+    a.border-bottom {
       box-sizing: border-box;
       border-bottom: 1px solid $black;
+
     }
   }
 }
