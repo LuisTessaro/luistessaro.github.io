@@ -14,7 +14,7 @@ const Header = () => {
                     <ul className="flex items-center justify-center hidden lg:flex">
                         <li className={`mr-4 text-white ${active === 0 ? "active" : ""}`} onClick={() => setActive(0)}><a href="#">Home</a></li>
                         <li className={`mr-4 text-white ${active === 1 ? "active" : ""}`} onClick={() => setActive(1)}><a href="#about">About</a></li>
-                        <li className={`mr-4 text-white ${active === 2 ? "active" : ""}`} onClick={() => setActive(2)}><a href="#portifolio">Portfolio</a></li>
+                        <li className={`mr-4 text-white ${active === 2 ? "active" : ""}`} onClick={() => setActive(2)}><a href="#portfolio">Portfolio</a></li>
                         <li className={`text-white ${active === 3 ? "active" : ""}`} onClick={() => setActive(3)}><a href="#contact">Contact</a></li>
                     </ul>
                     <i onClick={() => setMenuOpen(' open')} className="fas fa-bars text-white block cursor-pointer" />
@@ -45,7 +45,7 @@ const Header = () => {
                             setMenuOpen('')
                             setActive(2)
                         }}
-                        href="#portifolio">
+                        href="#portfolio">
                         Portfolio</a>
 
                     <a className="hover:bg-main font-bold p-2 w-full text-center cursor-pointer hover:text-white border-bottom"
