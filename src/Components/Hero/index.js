@@ -7,7 +7,7 @@ import Typewriter from 'typewriter-effect';
 const Hero = () => {
     return (
         <div className="section hero">
-            <div className="container">
+            <div className="container flex align-center justify-between items-center">
                 <div className="introduction-text">
                     <p>Hello,</p>
                     <h1>I am <span className="introduce-me">Luís Tessaro</span></h1>

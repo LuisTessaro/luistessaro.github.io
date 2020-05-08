@@ -1,0 +1,26 @@
+.about {
+  background-image: url("/img/testimg.png");
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .content {
+    background-color: #1b1b1b;
+  }
+
+  @media (max-width: 770px) {
+    padding: 16px;
+    .title {
+      font-size: 2rem !important;
+    }
+    .content {
+      font-size: 1.2rem !important;
+    }
+  }
+}
+
+#about {
+  transform: translateY(-68px);
+}

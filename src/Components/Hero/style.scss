@@ -2,15 +2,10 @@
 
 .section.hero {
   .container {
-    min-height: calc(100vh - 69px);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    align-items: center;
+    min-height: calc(100vh - 68px);
 
     .introduction-text {
       flex: 2;
-      font-family: "Montserrat", sans-serif;
       color: $white;
 
       p {

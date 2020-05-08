@@ -1,11 +1,14 @@
 import React from 'react';
-import './index.scss';
 
+import './styles/tailwind.css';
+
+import './index.scss';
 
 import Header from './Components/Header'
 import Hero from './Components/Hero'
 import Portifolio from './Components/Portifolio'
 import Contact from './Components/Contact'
+import About from './Components/About'
 
 import Footer from './Components/Footer'
 
@@ -15,7 +18,8 @@ function App() {
       <Header />
       <main>
         <Hero />
-        {/* <Portifolio /> */}
+        <About />
+        <Portifolio />
         <Contact />
       </main>
       <Footer />
