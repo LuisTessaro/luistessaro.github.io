@@ -5,11 +5,11 @@ import Card from './Card'
 
 const Portifolio = () => {
     return (
-        <div className="section portifolio">
-            <div id="portifolio"></div>
+        <div className="section portfolio">
+            <div id="portfolio"></div>
             <div className="container">
                 <div className="title">
-                    <h3>Portifolio</h3>
+                    <h3>Portfolio</h3>
                     <hr />
                 </div>
 

@@ -6,7 +6,7 @@ import './index.scss';
 
 import Header from './Components/Header'
 import Hero from './Components/Hero'
-import Portifolio from './Components/Portifolio'
+import Portfolio from './Components/Portfolio'
 import Contact from './Components/Contact'
 import About from './Components/About'
 
@@ -19,7 +19,7 @@ function App() {
       <main>
         <Hero />
         <About />
-        <Portifolio />
+        <Portfolio />
         <Contact />
       </main>
       <Footer />
