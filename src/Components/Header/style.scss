@@ -5,15 +5,19 @@
   .container {
     ul {
       li {
+        a {
+          color: $white;
+        }
         a:hover {
           transition: color 0.2s linear;
           color: darken($white, 20%);
         }
-      }
-      li.active {
-        border-bottom: 1px solid $main;
-        a {
+        a.active {
           color: $main;
+          border-bottom: 1px solid $main;
+          a {
+            color: $main;
+          }
         }
       }
     }
@@ -28,10 +32,10 @@
     a.border-bottom {
       box-sizing: border-box;
       border-bottom: 1px solid $black;
-
     }
   }
 }
+
 .clicable-bg {
   position: fixed;
   top: 0;

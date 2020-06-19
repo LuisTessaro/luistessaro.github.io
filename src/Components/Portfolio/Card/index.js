@@ -4,7 +4,7 @@ import './style.scss';
 
 const Card = ({ link, imgUrl, title, subTitle }, ...props) => {
     return (
-        <a className="card" target="_blank" href={link}>
+        <a className="card" target="_blank" href={link} rel="noopener noreferrer">
             <img src={imgUrl} className="img" alt="card" />
             <h1>{title}</h1>
             <p>{subTitle}</p>

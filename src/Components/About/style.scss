@@ -1,17 +1,6 @@
 .about {
-  background-image: url("https://raw.githubusercontent.com/LuisTessaro/luistessaro.github.io/React-Source/public/img/testimg.png");
-
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  .content {
-    background-color: #1b1b1b;
-  }
-
+  padding: 16px;
   @media (max-width: 770px) {
-    padding: 16px;
     .title {
       font-size: 2rem !important;
     }

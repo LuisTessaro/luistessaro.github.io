@@ -32,13 +32,13 @@ const Contact = () => {
                 <div className="social">
                     <ul>
                         <li className="flex-e">
-                            <a href="https://www.facebook.com/luis.tessaro.7" target="_blank"> <i className="fab fa-facebook"></i> </a>
+                            <a href="https://www.facebook.com/luis.tessaro.7" target="_blank" rel="noopener noreferrer"> <i className="fab fa-facebook"></i> </a>
                         </li>
                         <li className="flex-e">
-                            <a href="https://github.com/LuisTessaro" target="_blank"> <i className="fab fa-github"></i></a>
+                            <a href="https://github.com/LuisTessaro" target="_blank" rel="noopener noreferrer"> <i className="fab fa-github"></i></a>
                         </li>
                         <li className="flex-e">
-                            <a href="https://www.linkedin.com/in/luis-tessaro-36a712150/" target="_blank"> <i className="fab fa-linkedin"></i> </a>
+                            <a href="https://www.linkedin.com/in/luis-tessaro-36a712150/" target="_blank" rel="noopener noreferrer"> <i className="fab fa-linkedin"></i> </a>
                         </li>
                     </ul>
                 </div>
